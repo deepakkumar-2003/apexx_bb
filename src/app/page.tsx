@@ -5,6 +5,7 @@ import { Dumbbell, Users, Clock, ShieldCheck, Star, ChevronRight } from 'lucide-
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import FloatingWhatsApp from '@/components/FloatingWhatsApp'
+import BottomNavbar from '@/components/BottomNavbar'
 
 export const metadata: Metadata = {
   title: 'Apexx Fitness Studio — Push Your Limits',
@@ -66,7 +67,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1">
+      <main className="flex-1 pb-16 md:pb-0">
         {/* Hero */}
         <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
           <div
@@ -249,6 +250,7 @@ export default function HomePage() {
       </main>
       <Footer />
       <FloatingWhatsApp />
+      <BottomNavbar />
     </div>
   )
 }
